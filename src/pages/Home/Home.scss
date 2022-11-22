@@ -8,8 +8,6 @@
     flex-wrap: wrap;
     margin-top: 15px;
     .card {
-        background-color: var(--secondary);
-        color: var(--primary);
         border-radius: 0;
         width: 33.33%;
         height: 250px;
@@ -30,7 +28,14 @@
     }
     .card-text {
         min-height: 140px;
+        max-height: 140px;
+        overflow: auto;
     }
+}
+
+.card-container .card:nth-child(even) {
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 .card-container .card:nth-child(odd) {
@@ -48,4 +53,24 @@
     margin-left: 10px;
     vertical-align: top;
     font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .card-container .card {
+      height: 330px;
+    }
+    .card-container .card-text {
+        height: 200px;
+        overflow: auto;
+    }
+    .card-container .card .badge.bg-custom-badge {
+        display: none;
+    }
 }
