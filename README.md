@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Image
-
 This is a collection of small beginners/useful apps developed in React.
+
+![image](https://user-images.githubusercontent.com/24684808/203264872-215c29e7-3600-4fb9-bcb7-2851f31698a2.png)
 
 ## Run the application
 
