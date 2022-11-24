@@ -6,6 +6,10 @@ This is a collection of small beginners/useful apps developed in React.
 
 ![image](https://user-images.githubusercontent.com/24684808/203264872-215c29e7-3600-4fb9-bcb7-2851f31698a2.png)
 
+## The website is live
+
+[My React Projects](https://react-projects-aamrits.netlify.app/)
+
 ## Run the application
 
 In the project directory, you can run:
