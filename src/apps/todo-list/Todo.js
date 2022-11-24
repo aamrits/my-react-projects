@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Container from '../../components/Container/Container';
 import TodoInputForm from './TodoInputForm';
@@ -9,7 +9,6 @@ const Todo = () => {
     const [input, setInput] = useState('');
     const [isDisabled, setIsDisabled] = useState(true);
     const [isEdit, setIsEdit] = useState(false);
-    const [isDelete, setIsDelete] = useState(false);
     
     const onChangeHandler = (e) => {
         setInput(e.target.value);
@@ -31,7 +30,6 @@ const Todo = () => {
         const filteredItems = items.filter(item => item.id !== id);
 
         setItems(filteredItems);
-        setIsDelete(true);
     }
 
     const handleEdit = (id) => {

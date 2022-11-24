@@ -20,20 +20,20 @@ const GithubSearch = () => {
 
   useEffect(() => {
     if (userName !== '') {
+      const getBio = async () => {
+        const { data } = await axios.get(`${URL}/${userName}?client_id=${CLIENT_ID}&&client_secret=${CLIENT_SECRET}`);
+        setBio(data);
+      }
+    
+      const getRepos = async () => {
+        const { data } = await axios.get(`${URL}/${userName}/repos?client_id=${CLIENT_ID}&&client_secret=${CLIENT_SECRET}&per_page=8&sort=updated`);
+        setRepos(data);
+      }
+      
       getBio();
       getRepos();
     }
   }, [userName]);
-
-  const getBio = async () => {
-    const { data } = await axios.get(`${URL}/${userName}?client_id=${CLIENT_ID}&&client_secret=${CLIENT_SECRET}`);
-    setBio(data);
-  }
-
-  const getRepos = async () => {
-    const { data } = await axios.get(`${URL}/${userName}/repos?client_id=${CLIENT_ID}&&client_secret=${CLIENT_SECRET}&per_page=8&sort=updated`);
-    setRepos(data);
-  }
 
   return (
     <>

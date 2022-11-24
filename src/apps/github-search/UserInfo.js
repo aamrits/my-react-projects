@@ -17,6 +17,7 @@ const UserInfo = ({ bio }) => {
               <img className="img-fluid" src={bio.avatar_url} alt={bio.name} />
               <a className="btn btn-info btn-block mt-3 mb-3"
                 target="_blank"
+                rel="noreferrer"
                 href={bio.html_url}>View Profile</a>
             </div>
             <div className="col-sm-8">

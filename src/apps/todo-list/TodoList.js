@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../../components/Container/Container'
 
-const ToDoList = ({ items,handleEdit, handleDelete, clearList }) => {
+const ToDoList = ({ items, handleEdit, handleDelete, clearList }) => {
     let itemsList;
 
     if(items) {

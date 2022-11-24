@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const TodoInput = ({ input, onChangeHandler, onSubmit, editItem, disabled }) => {
     return (
@@ -6,7 +6,7 @@ const TodoInput = ({ input, onChangeHandler, onSubmit, editItem, disabled }) => 
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                     <div className="input-group mb-2">
-                        <label class="input-group-text">Item</label>
+                        <label className="input-group-text">Item</label>
                         <input 
                             type="text" 
                             className="form-control" 

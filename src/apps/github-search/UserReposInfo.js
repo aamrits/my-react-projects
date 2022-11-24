@@ -10,7 +10,7 @@ const UserReposInfo = ({ bio, repos }) => {
           <div className="row">
             <div className="col-sm-9">
               <h5>
-                <a href={repo.html_url} target="_blank">{repo.name}</a>
+                <a href={repo.html_url} target="_blank" rel="noreferrer">{repo.name}</a>
               </h5>
               <p className="m-0">{repo.description}</p>
               <p className="m-0">Last updated on
